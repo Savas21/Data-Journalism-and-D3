@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Journalism and D3</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here" rel="stylesheet">
+
+    <!-- d3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>Among Americans, Smoking Decreases As Income Increases.</h1>
+                <h4>The Relationship Between Income And Smoking In The United States</h4>
+
+                <p>In this project, I'm analyzing the trends shaping people's lives back to 2014, as well as creating charts, graphs and interactives to help understand the findings. The data we're using collected from <a href="https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml">American Community Survey (ACS)</a> and <a href="https://chronicdata.cdc.gov/Behavioral-Risk-Factors/BRFSS-2014-Overall/5ra3-ixqq">the Behavioral Risk Factor Surveillance System (BRFSS)</a>.</p>
+
+                <p><b>You can directly explore the convincing correlation by clicking on any of each axis titles.</b></p>
+            </div>
+
+
+            <div class="col-md-10 col-md-offset-1">
+                <hr>
+                <div class="chart">
+                </div>
+
+                <hr>
+            </div>
+
+            <div class="col-md-8 col-md-offset-2">
+                <p>Generally, among Americans, smoking decreases as income increases. (When you select 'Household Income (Median)' and 'Smokes (%)' at the same time.)</p>
+
+                <p>Nationwide, one of the interesting facts is when we select household income as a fixed value, the smokes (%) and alcohol consumption (%) are opposite. The household income at 50,000 has some tiny change,  but the States at 40,000 and 70,000 are switching their positions.</p>
+
+                <p> Also, it is interesting to see the state of Puerto Rico is getting clustered out from the central states in America in the most of the indicators.</p>
+
+
+                <a href="https://github.com/yycyjqc/Data_Journalism_and_D3">Explore the d3.js code</a>
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="{{url_for('static',filename='js/app.js')}}"></script>
+
+</body>
+
+</html>
